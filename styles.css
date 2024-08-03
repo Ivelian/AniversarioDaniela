@@ -71,13 +71,13 @@ h3 {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 1em;
-    color: #ffffff; /* Rosa para los subtítulos de sección */
+    color: #ff69b4; /* Rosa para los subtítulos de sección */
 }
 
 /* Estilo de párrafos */
 p {
-    font-size: 1.5em;
-    margin-top: 1em;
+    font-size: 1em;
+    margin-top: -0.5em;
     margin-bottom: 30px;
 }
 
@@ -136,14 +136,16 @@ p {
 }
 
 .pruebas p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #ffffff;
-    margin-top: 10px;
+    margin-top: -1em;
+    margin-bottom: 2em;
 }
 
 /* Estilo de tareas */
 .tasks {
     margin-top: 30px;
+    font-size: 1.5em;
 }
 
 .task {
