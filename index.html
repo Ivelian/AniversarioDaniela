@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1r ANIVERSARIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background"></div> <!-- Capa de fondo con degradado -->
+    <video class="video-background" autoplay muted loop>
+        <source src="Imagenes/Background HD, fondo universo en movimiento, galaxia remolino-vmake.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+    <div class="container">
+        <h1>FELIZ ANIVERSARIO MI VIDA</h1>
+        <h2>PARA DANIELA DE IVELIAN <3</h2>
+        <p>Mi vida, aún no me creo que haya pasado un año desde el día que te pedí salir en ese mirador justo
+            después de tu mítico "Dilo YAA" que me hizo saltar de alegría, pero el tiempo vuela y aquí estamos,
+            1 año después. Quiero que sepas que te amo con toda mi alma y siempre lo haré. No me quiero enrollar
+            demasiado ya que te he escrito una carta diciéndote todo lo que quería decirte, pero quería hacer
+            esto un poquito más especial <3</p>
+
+        <h3>NUESTROS RECUERDOS</h3>
+        <div class="gallery">
+            <div class="photo" data-text="Texto para la primera imagen.">
+                <img src="Imagenes/IMG_5150.JPG" alt="Primera Imagen">
+            </div>
+            <div class="photo" data-text="Texto para la segunda imagen.">
+                <img src="Imagenes/IMG_5176.JPG" alt="Segunda Imagen">
+            </div>
+            <!-- Añade más imágenes aquí -->
+        </div>
+
+        <div class="pruebas">
+            <h3>PRUEBAS</h3>
+            <p>Esta vez no te lo pondré tan fácil para tu regalo y así haremos esto un poco más divertido</p>
+        </div>
+
+        <div class="tasks">
+            <div class="task" id="task1">
+                <p>Prueba 1: Escribe tres cosas que te gustan de mí.</p>
+                <button onclick="completeTask('task1')">Marcar como hecha</button>
+            </div>
+            <div class="task" id="task2">
+                <p>Prueba 2: Dibuja un corazón y envíamelo por WhatsApp.</p>
+                <button onclick="completeTask('task2')">Marcar como hecha</button>
+                <button onclick="previousTask('task2')">Deshacer</button>
+            </div>
+            <div class="task" id="task3">
+                <p>Prueba 3: Reproduce nuestra canción favorita y envíame un video cantándola.</p>
+                <button onclick="completeTask('task3')">Marcar como hecha</button>
+                <button onclick="previousTask('task3')">Deshacer</button>
+            </div>
+        </div>
+
+        <div id="congratulations" class="congratulations">
+            <p>Felicidades, puedes reclamar tu regalo</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
