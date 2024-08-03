@@ -1,3 +1,18 @@
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 15,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadow: true,
+    },
+    loop: true,
+});
+
 function completeTask(taskId) {
     const currentTask = document.getElementById(taskId);
     const nextTask = currentTask.nextElementSibling;
@@ -34,10 +49,36 @@ function showCongratulations() {
 }
 
 function startConfetti() {
+    // Confeti desde la esquina inferior izquierda
     confetti({
-        particleCount: 200,
-        spread: 60,
-        origin: { y: 0.6 }
+        particleCount: 500, // Más partículas para un mayor efecto
+        angle: 45, // Ajusta el ángulo de dispersión hacia la derecha
+        spread: 1500, // Aumenta el ángulo de dispersión para un mayor alcance
+        origin: { x: 0.1, y: 1 } // Esquina inferior izquierda
+    });
+
+    // Confeti desde la esquina inferior derecha
+    confetti({
+        particleCount: 500, // Más partículas para un mayor efecto
+        angle: 135, // Ajusta el ángulo de dispersión hacia la izquierda
+        spread: 150, // Aumenta el ángulo de dispersión para un mayor alcance
+        origin: { x: 0.9, y: 1 } // Esquina inferior derecha
+    });
+
+    // Confeti desde la esquina superior izquierda
+    confetti({
+        particleCount: 500, // Más partículas para un mayor efecto
+        angle: 275, // Ajusta el ángulo de dispersión hacia la izquierda
+        spread: 150, // Aumenta el ángulo de dispersión para un mayor alcance
+        origin: { x: 0.1, y: 0 } // Esquina superior izquierda
+    });
+
+    // Confeti desde la esquina superior derecha
+    confetti({
+        particleCount: 500, // Más partículas para un mayor efecto
+        angle: 275, // Ajusta el ángulo de dispersión hacia la derecha
+        spread: 150, // Aumenta el ángulo de dispersión para un mayor alcance
+        origin: { x: 0.9, y: 0 } // Esquina superior derecha
     });
 }
 

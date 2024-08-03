@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1r ANIVERSARIO</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="background"></div> <!-- Capa de fondo con degradado -->
     <video class="video-background" autoplay muted loop>
@@ -22,96 +25,102 @@
             1 año después. Quiero que sepas que te amo con toda mi alma y siempre lo haré. No me quiero enrollar
             demasiado ya que te he escrito una carta diciéndote todo lo que quería decirte, pero quería hacer
             esto un poquito más especial <3</p>
+        <div class="Galeria">
+            <h3>NUESTROS RECUERDOS</h3>
+            <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-text="Texto para la 1 imagen.">
+                            <img src="Imagenes/1.JPEG" alt="1">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 2 imagen.">
+                            <img src="Imagenes/2.JPG" alt="2">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 3 imagen.">
+                            <img src="Imagenes/3.JPEG" alt="3">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 4 imagen.">
+                            <img src="Imagenes/4.JPEG" alt="4">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 5 imagen.">
+                            <img src="Imagenes/5.JPG" alt="5">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 6 imagen.">
+                            <img src="Imagenes/6.JPEG" alt="6">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 7 imagen.">
+                            <img src="Imagenes/7.JPEG" alt="7">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 8 imagen.">
+                            <img src="Imagenes/9.JPEG" alt="8">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 9 imagen.">
+                            <img src="Imagenes/11.JPG" alt="9">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 10 imagen.">
+                            <img src="Imagenes/12.JPG" alt="10">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 11 imagen.">
+                            <img src="Imagenes/13.JPEG" alt="11">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 12 imagen.">
+                            <img src="Imagenes/14.JPEG" alt="12">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 13 imagen.">
+                            <img src="Imagenes/15.JPG" alt="13">
+                        </div>
+                        <div class="swiper-slide" data-text="Texto para la 14 imagen.">
+                            <img src="Imagenes/16.JPG" alt="14">
+                        </div>
+            </div>
+            <div class="pruebas">
+                <h3>PRUEBAS</h3>
+                <p>Esta vez no te lo pondré tan fácil para tu regalo y así haremos esto un poco más divertido</p>
+            </div>
 
-        <h3>NUESTROS RECUERDOS</h3>
-        <div class="gallery">
-            <div class="photo" data-text="Texto para la 1 imagen.">
-                <img src="Imagenes/IMG_5150.JPG" alt="1">
+            <div class="tasks">
+                <div class="task" id="task1">
+                    <p>Arreglate que nos vamos</p>
+                    <button onclick="completeTask('task1')">Listo</button>
+                </div>
+                <div class="task" id="task2">
+                    <p>Acompañame a nuestra primera cita donde nuestra primera parada es... (________)</p>
+                    <button onclick="completeTask('task2')">Listo</button>
+                    <button onclick="previousTask('task2')">Antras</button>
+                </div>
+                <div class="task" id="task3">
+                    <p>Muy bien, a ver si te acuerdas cual es nuestra 2n parada? (________)</p>
+                    <button onclick="completeTask('task3')">Listo</button>
+                    <button onclick="previousTask('task3')">Atras</button>
+                </div>
+                <div class="task" id="task4">
+                    <p>Casi terminamos con nuestra cita... Cual fue nuestra ultima parada? (________)</p>
+                    <button onclick="completeTask('task4')">Listo</button>
+                    <button onclick="previousTask('task4')">Atras</button>
+                </div>
+                <div class="task" id="task5">
+                    <p>Justo después fuimos a casa a comer? (________)</p>
+                    <button onclick="completeTask('task5')">Listo</button>
+                    <button onclick="previousTask('task5')">Atras</button>
+                </div>
+                <div class="task" id="task6">
+                    <p>Hemos recreado uno de los momentos más inolvidables de mi vida, así que es momento de una cartita</p>
+                    <button onclick="completeTask('task6')">Listo</button>
+                    <button onclick="previousTask('task6')">Atras</button>
+                </div>
+                <div class="task" id="task7">
+                    <p>No esperarías que esto haya terminado no? O si?</p>
+                    <button onclick="completeTask('task7')">Listo</button>
+                    <button onclick="previousTask('task7')">Atras</button>
+                </div>
             </div>
-            <div class="photo" data-text="Texto para la 2 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="2">
-            </div>
-            <div class="photo" data-text="Texto para la 3 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="3">
-            </div>
-            <div class="photo" data-text="Texto para la 4 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="4">
-            </div>
-            <div class="photo" data-text="Texto para la 5 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="5">
-            </div>
-            <div class="photo" data-text="Texto para la 6 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="6">
-            </div>
-            <div class="photo" data-text="Texto para la 7 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="7">
-            </div>
-            <div class="photo" data-text="Texto para la 8 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="8">
-            </div>
-            <div class="photo" data-text="Texto para la 9 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="9">
-            </div>
-            <div class="photo" data-text="Texto para la 10 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="10">
-            </div>
-            <div class="photo" data-text="Texto para la 11 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="11">
-            </div>
-            <div class="photo" data-text="Texto para la 12 imagen.">
-                <img src="Imagenes/IMG_5176.JPG" alt="12">
-            </div>
-        </div>
 
-        <div class="pruebas">
-            <h3>PRUEBAS</h3>
-            <p>Esta vez no te lo pondré tan fácil para tu regalo y así haremos esto un poco más divertido</p>
-        </div>
-
-        <div class="tasks">
-            <div class="task" id="task1">
-                <p>Arreglate que nos vamos</p>
-                <button onclick="completeTask('task1')">Listo</button>
+            <div id="congratulations" class="congratulations">
+                <p>FELICIDADES MI VIDA, PUEDES RECLAMAR TU REGALO</p>
             </div>
-            <div class="task" id="task2">
-                <p>Acompañame a nuestra primera cita donde nuestra primera parada es... (________)</p>
-                <button onclick="completeTask('task2')">Listo</button>
-                <button onclick="previousTask('task2')">Antras</button>
-            </div>
-            <div class="task" id="task3">
-                <p>Muy bien, a ver si te acuerdas cual es nuestra 2n parada? (________)</p>
-                <button onclick="completeTask('task3')">Listo</button>
-                <button onclick="previousTask('task3')">Atras</button>
-            </div>
-            <div class="task" id="task4">
-                <p>Casi terminamos con nuestra cita... Cual fue nuestra ultima parada? (________)</p>
-                <button onclick="completeTask('task4')">Listo</button>
-                <button onclick="previousTask('task4')">Atras</button>
-            </div>
-            <div class="task" id="task5">
-                <p>Justo después fuimos a casa a comer? (________)</p>
-                <button onclick="completeTask('task5')">Listo</button>
-                <button onclick="previousTask('task5')">Atras</button>
-            </div>
-            <div class="task" id="task6">
-                <p>Hemos recreado uno de los momentos más inolvidables de mi vida, así que es momento de una cartita</p>
-                <button onclick="completeTask('task6')">Listo</button>
-                <button onclick="previousTask('task6')">Atras</button>
-            </div>
-            <div class="task" id="task7">
-                <p>No esperarías que esto haya terminado no? O si?</p>
-                <button onclick="completeTask('task7')">Listo</button>
-                <button onclick="previousTask('task7')">Atras</button>
-            </div>
-        </div>
-
-        <div id="congratulations" class="congratulations">
-            <p>FELICIDADES MI VIDA, PUEDES RECLAMAR TU REGALO</p>
         </div>
     </div>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" ></script>
 </body>
-
 </html>
