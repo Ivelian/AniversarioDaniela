@@ -74,11 +74,15 @@ h3 {
     color: #ff69b4; /* Rosa para los subtítulos de sección */
 }
 
+.congratulations p {
+    text-align: center;
+}
 /* Estilo de párrafos */
 p {
     font-size: 1em;
     margin-top: -0.5em;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .swiper{
@@ -130,21 +134,28 @@ p {
     color: #ffffff;
     margin-top: -1em;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 /* Estilo de tareas */
 .tasks {
     margin-top: 30px;
     font-size: 1.5em;
+
 }
 
+.task p {
+    text-align: center;
+}
 .task {
     display: none;
     margin-bottom: 20px;
+
 }
 
 .task.active {
     display: block;
+
 }
 
 button {
